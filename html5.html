@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GYM - HomePage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="widescreen.css" media="screen and (min-width: 1100px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+</head>
+<style>
+    #one {
+        text-align: center;
+
+    }
+</style>
+
+<body id="home">
+    <nav id="navbar" class="bg-dark">
+        <div class="logo">
+            <a href="#home"><img src="logo.png" alt="GYM Logo"></a>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html2.html">About-us</a></li>
+            <li><a href="htm3.html">Programs</a></li>
+            <li><a href="html4.html">Trainers-image-Gallery</a></li>
+            <li><a href="html6.html">trainers-table</a></li>
+
+        </ul>
+    </nav>
+    <section id="contact">
+        <div class="contact-us bg-primary p-1">
+            <h3 class="m-heading py-1" id="one">Feel free to ask anything</h3>
+
+            <div class="container">
+
+                <form id="myform" onsubmit="return validation(event)" autocomplete="on">
+
+
+                    <div class="inputBox">
+
+
+
+                        <input name="fname" type="text" placeholder="First name" id="user" class="control" required>
+                        <input name="lname" type="text" placeholder="last name" id="user2" class="control" required>
+                        <input name="email" type="email" id="email" class="control" placeholder="email" required>
+                        <input name="number" type="tel" id="mobile" class="control" placeholder="mobile phone number"
+                            pattern="[0-9]{11}" required>
+                        <input name="adress" type="text" id="adress" class="adress" placeholder="adress" required>
+                        <input name="password" type="password" id="pass" class="control" placeholder="password"
+                            required>
+                        <input name="passward" type="password" placeholder="confirm passward" id="conpass"
+                            class="control">
+                    </div>
+                    <textarea placeholder="Your order.." name="address" id="" cols="30" rows="10" required></textarea>
+                    <select id="gender" name="gender" required>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select><br><br>
+
+
+                    <input type="submit" value="join now" class="btn" id="submit">
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <footer class="text-center py-1 bg-dark">
+        <p>Copyright &copy; 2021, The GYM, All Rights Are Reserved</p>
+    </footer>
+</body>
+<script src="min.js"></script>
+<script src="https://kit.fontawesome.com/f5264f338f.js" crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+
+</html>
